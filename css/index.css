@@ -297,9 +297,13 @@ header nav a i {
 }
 .card {
   justify-content: space-between;
-  width: 22%;
+  width: 23%;
+  padding-bottom: 3%;
+  text-align: center;
 }
 .card img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
+  padding-bottom: 2%;
 }
