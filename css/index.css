@@ -157,6 +157,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.abtcont {
+  max-width: 60%;
+  width: 100%;
+  margin: 0 auto;
+}
 header {
   display: flex;
   background-color: #fff;
@@ -216,7 +221,7 @@ header nav a i {
   width: 100%;
 }
 .top-content img {
-  width: 45%;
+  width: 50%;
   border-radius: 10px;
 }
 .middle-content {
@@ -278,8 +283,23 @@ header nav a i {
   background-color: #0079D3;
   color: white;
   border-radius: 10px;
+  border: none;
 }
 .bottom-content img {
   width: 50%;
+  border-radius: 10px;
+}
+.abtcont {
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  justify-content: space-between;
+  width: 22%;
+}
+.card img {
+  width: 100%;
   border-radius: 10px;
 }
