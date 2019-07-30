@@ -211,7 +211,6 @@ header nav a i {
 .top-content h1 {
   width: 100%;
   text-align: center;
-  padding-bottom: -20%;
 }
 .top-content p {
   width: 100%;
@@ -237,7 +236,7 @@ header nav a i {
 .middle-content h1 {
   width: 100%;
   text-align: center;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
 }
 .middle-content h2 {
   width: 100%;
@@ -248,10 +247,10 @@ header nav a i {
   font-size: 1.2rem;
   width: 100%;
   line-height: 2;
-  text-align: center;
+  padding-left: 10%;
 }
 .middle-content img {
-  width: 45%;
+  width: 50%;
   border-radius: 10px;
 }
 .bottom-content {
