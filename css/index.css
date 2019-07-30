@@ -128,31 +128,62 @@ table {
 }
 * {
   box-sizing: border-box;
-  background-color: #333B68;
-  color: white;
 }
-body {
+html {
   font-size: 62.5%;
-  color: white;
+  background-color: #DAE0E6;
+}
+html,
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+  font-size: 1rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 .container {
-  max-width: 80%;
+  max-width: 60%;
   width: 100%;
   margin: 0 auto;
 }
-.sidebar {
-  background-color: grey;
-  margin: 5% 5%;
+header {
   display: flex;
-  flex-direction: column;
-  width: 20%;
-  height: 100%;
+  background-color: #fff;
+  width: 100%;
+  padding: 1% 20%;
+  position: absolute;
 }
-.sidebar h1 {
+header nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav .logo {
+  display: flex;
+  width: 100%;
+}
+header nav .logo h1 {
   font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  align-self: center;
 }
-.sidebar a {
+header nav .logo img {
+  width: 15%;
+  padding-left: 2%;
+}
+header nav a {
+  justify-content: flex-start;
   text-decoration: none;
-  font-size: 1rem;
-  padding: 1% 0;
+  color: black;
+  padding: 2% 5% 0 0;
+  font-size: 1.5rem;
+  flex-direction: row;
+}
+header nav a i {
+  padding-right: 20%;
+}
+.main {
+  padding-top: 15%;
 }
