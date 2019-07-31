@@ -60,20 +60,25 @@
     article {
         width: 50%;
         text-align: center;
-        align-self: center;
-        padding-bottom: 10%;
+        padding: 2% 2% 0 0;
     
         h1 {
-            padding: 5% 0;
+            padding: 10% 0 5% 0;
         }
 
         button {
-            margin-top: 5%;
+            margin: 5% 0 0 0;
             padding: 2% 20%;
             background-color:#0079D3;
             color: white;
             border-radius: 10px;
             border:none;
+            &:hover {
+                color: #0079D3;
+                background-color: #DAE0E6;
+                transition: 0.5s;
+            }
+
         }
     }
 }
@@ -91,6 +96,8 @@
     img {
         .imgstyle();
         width: 100%;
+        box-shadow: 2px 2px grey;
+        margin-bottom: 5%;
     }
 }
 
@@ -98,11 +105,9 @@
     width: 23%;
     padding-bottom: 5%;
     text-align: center;
-
-    h1 {
-        padding: 5% 0 0 0;
+    a {
+        font-size: 3rem;
     }
-
 }
 
 
@@ -157,6 +162,7 @@
         img {
             width: 100%;
         }
+        
     }
 
 }

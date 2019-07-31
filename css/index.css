@@ -170,6 +170,7 @@ header {
   background-color: #fff;
   width: 100%;
   padding: 1% 0 0 20%;
+  box-shadow: 0  0 5px 0 grey;
 }
 header nav {
   width: 100%;
@@ -196,6 +197,7 @@ header nav a {
 }
 header nav a:hover {
   background-color: #DAE0E6;
+  transition: 0.5s;
 }
 header nav a i {
   font-size: 1.5rem;
@@ -239,6 +241,7 @@ header nav a i {
   background-color: white;
   border-radius: 10px;
   padding: 2%;
+  box-shadow: 2px 2px grey;
 }
 .top-content article {
   display: flex;
@@ -257,6 +260,7 @@ header nav a i {
   background-color: white;
   border-radius: 10px;
   padding: 2%;
+  box-shadow: 2px 2px grey;
   padding-top: 5%;
   margin: 3.2% 0;
 }
@@ -282,23 +286,28 @@ header nav a i {
   background-color: white;
   border-radius: 10px;
   padding: 2%;
+  box-shadow: 2px 2px grey;
 }
 .bottom-content article {
   width: 50%;
   text-align: center;
-  align-self: center;
-  padding-bottom: 10%;
+  padding: 2% 2% 0 0;
 }
 .bottom-content article h1 {
-  padding: 5% 0;
+  padding: 10% 0 5% 0;
 }
 .bottom-content article button {
-  margin-top: 5%;
+  margin: 5% 0 0 0;
   padding: 2% 20%;
   background-color: #0079D3;
   color: white;
   border-radius: 10px;
   border: none;
+}
+.bottom-content article button:hover {
+  color: #0079D3;
+  background-color: #DAE0E6;
+  transition: 0.5s;
 }
 .abtcont {
   padding-top: 3.2%;
@@ -310,14 +319,16 @@ header nav a i {
   width: 50%;
   border-radius: 10px;
   width: 100%;
+  box-shadow: 2px 2px grey;
+  margin-bottom: 5%;
 }
 .card {
   width: 23%;
   padding-bottom: 5%;
   text-align: center;
 }
-.card h1 {
-  padding: 5% 0 0 0;
+.card a {
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .container {
