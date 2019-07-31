@@ -1,0 +1,181 @@
+
+// Homepage styling
+
+.main {
+    margin: 3.2% 0;
+
+    img {
+        .imgstyle();
+    }
+}
+
+.top-content {
+
+    .contstyle();
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 47%;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+
+    h1 {
+        .hstyle();
+    }
+
+}
+
+.middle-content {
+
+    .contstyle();
+    padding-top: 5%;
+    margin: 3.2% 0;
+
+    article {
+        width: 50%;
+    }
+
+    h1 {
+        .hstyle();
+        padding-bottom: 5%;
+    }
+
+    h2 {
+        .hstyle();
+        padding-bottom: 5%;
+    }
+
+    ul {
+        padding-left: 12%;
+    }
+
+}
+
+.bottom-content {
+
+    .contstyle();
+
+    article {
+        width: 50%;
+        text-align: center;
+        padding: 2% 2% 0 0;
+    
+        h1 {
+            padding: 10% 0 5% 0;
+        }
+
+        button {
+            margin: 5% 0 0 0;
+            padding: 2% 20%;
+            background-color:#0079D3;
+            color: white;
+            border-radius: 10px;
+            border:none;
+            &:hover {
+                color: #0079D3;
+                background-color: #DAE0E6;
+                transition: 0.5s;
+            }
+
+        }
+    }
+}
+
+
+// about page styling
+
+
+.abtcont {
+    padding-top: 3.2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    img {
+        .imgstyle();
+        width: 100%;
+        box-shadow: 2px 2px grey;
+        margin-bottom: 5%;
+    }
+}
+
+.card {
+    width: 23%;
+    padding-bottom: 5%;
+    text-align: center;
+    a {
+        font-size: 3rem;
+    }
+}
+
+
+//HOMEPAGE MOBILE STYLES
+@media @phone {
+
+    .container {
+            max-width: 96%;
+    }
+
+    .top-content {
+            flex-direction: column-reverse;
+        
+            article {
+                width: 100%;
+                padding: 2%;
+            
+                p {
+                    margin: 4%;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    .middle-content {
+        flex-direction: column;
+    
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+        img {
+            display: none;
+        }
+        ul {
+            padding:0;
+        }
+    }
+
+    .bottom-content {
+        flex-direction: column-reverse;
+
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+    }
+
+}
+
+
+// ABOUTPAGE MOBILE STYLES
+@media @phone {
+    .abtcont {
+        max-width: 96%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
