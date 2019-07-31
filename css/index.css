@@ -152,6 +152,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+ul {
+  font-size: 1.2rem;
+  line-height: 2;
+}
 .container {
   max-width: 60%;
   width: 100%;
@@ -163,11 +167,9 @@ img {
   margin: 0 auto;
 }
 header {
-  display: flex;
   background-color: #fff;
   width: 100%;
-  padding: 1% 20%;
-  position: absolute;
+  padding: 1% 0 0 20%;
 }
 header nav {
   width: 100%;
@@ -183,96 +185,109 @@ header nav .logo h1 {
   align-self: center;
 }
 header nav .logo img {
-  width: 15%;
+  width: 12%;
   padding-left: 2%;
 }
 header nav a {
-  justify-content: flex-start;
   text-decoration: none;
   color: black;
-  padding: 2% 5% 0 0;
+  padding: 1% 2% 1% 0;
   font-size: 1.5rem;
-  flex-direction: row;
+}
+header nav a:hover {
+  background-color: #DAE0E6;
 }
 header nav a i {
-  padding-right: 20%;
+  font-size: 1.5rem;
+  padding-right: 20px;
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    padding: 0;
+  }
+  header nav {
+    justify-content: space-evenly;
+  }
+  header nav .logo {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2% 0;
+  }
+  header nav .logo h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header nav .logo img {
+    width: 40%;
+    padding: 0;
+  }
+  header nav a {
+    margin-bottom: 2%;
+  }
 }
 .main {
-  padding-top: 15%;
+  margin: 3.2% 0;
+}
+.main img {
+  width: 50%;
+  border-radius: 10px;
 }
 .top-content {
   display: flex;
+  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
   padding: 2%;
-  justify-content: space-between;
 }
 .top-content article {
   display: flex;
   flex-wrap: wrap;
-  width: 45%;
+  width: 47%;
   align-items: center;
+  padding-bottom: 5%;
 }
 .top-content h1 {
   width: 100%;
   text-align: center;
 }
-.top-content p {
-  width: 100%;
-}
-.top-content img {
-  width: 50%;
-  border-radius: 10px;
-}
 .middle-content {
   display: flex;
-  padding-top: 5%;
+  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
   padding: 2%;
-  margin-top: 3.2%;
-  justify-content: space-between;
+  padding-top: 5%;
+  margin: 3.2% 0;
 }
 .middle-content article {
-  display: flex;
-  flex-wrap: wrap;
-  width: 45%;
+  width: 50%;
 }
 .middle-content h1 {
   width: 100%;
   text-align: center;
-  padding-bottom: 2%;
+  padding-bottom: 5%;
 }
 .middle-content h2 {
   width: 100%;
-  font-size: 1.5rem;
   text-align: center;
+  padding-bottom: 5%;
 }
 .middle-content ul {
-  font-size: 1.2rem;
-  width: 100%;
-  line-height: 2;
-  padding-left: 10%;
-}
-.middle-content img {
-  width: 50%;
-  border-radius: 10px;
+  padding-left: 12%;
 }
 .bottom-content {
   display: flex;
-  padding-top: 5%;
+  justify-content: space-between;
   background-color: white;
   border-radius: 10px;
   padding: 2%;
-  margin-top: 3.2%;
-  margin-bottom: 3.2%;
-  justify-content: space-between;
 }
 .bottom-content article {
-  flex-wrap: wrap;
   width: 50%;
   text-align: center;
   align-self: center;
+  padding-bottom: 10%;
 }
 .bottom-content article h1 {
   padding: 5% 0;
@@ -285,25 +300,72 @@ header nav a i {
   border-radius: 10px;
   border: none;
 }
-.bottom-content img {
-  width: 50%;
-  border-radius: 10px;
-}
 .abtcont {
-  padding-top: 10%;
+  padding-top: 3.2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.abtcont img {
+  width: 50%;
+  border-radius: 10px;
+  width: 100%;
+}
 .card {
-  justify-content: space-between;
   width: 23%;
-  padding-bottom: 3%;
+  padding-bottom: 5%;
   text-align: center;
 }
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  padding-bottom: 2%;
+.card h1 {
+  padding: 5% 0 0 0;
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 96%;
+  }
+  .top-content {
+    flex-direction: column-reverse;
+  }
+  .top-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .top-content article p {
+    margin: 4%;
+  }
+  .top-content img {
+    width: 100%;
+  }
+  .middle-content {
+    flex-direction: column;
+  }
+  .middle-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .middle-content img {
+    display: none;
+  }
+  .middle-content ul {
+    padding: 0;
+  }
+  .bottom-content {
+    flex-direction: column-reverse;
+  }
+  .bottom-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .bottom-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .abtcont {
+    max-width: 96%;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
 }

@@ -2,97 +2,66 @@
 // Homepage styling
 
 .main {
-    padding-top: 15%;
+    margin: 3.2% 0;
+
+    img {
+        .imgstyle();
+    }
 }
 
 .top-content {
-    display: flex;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2%;
-    justify-content: space-between;
+
+    .contstyle();
 
     article {
         display: flex;
         flex-wrap: wrap;
-        width: 45%;
+        width: 47%;
         align-items: center;
+        padding-bottom: 5%;
     }
 
     h1 {
-        width: 100%;
-        text-align: center;
-        // padding-bottom: -20%;
+        .hstyle();
     }
 
-    p {
-        width: 100%;
-    }
-
-    img {
-        width:50%;
-        border-radius: 10px;
-    }
 }
 
 .middle-content {
-    display: flex;
+
+    .contstyle();
     padding-top: 5%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2%;
-    margin-top: 3.2%;
-    justify-content: space-between;
+    margin: 3.2% 0;
 
     article {
-        display: flex;
-        flex-wrap: wrap;
-        width: 45%;
+        width: 50%;
     }
 
     h1 {
-        width: 100%;
-        text-align: center;
-        padding-bottom: 2%;
-        
+        .hstyle();
+        padding-bottom: 5%;
     }
 
     h2 {
-        width: 100%;
-        font-size: 1.5rem;
-        text-align: center;
+        .hstyle();
+        padding-bottom: 5%;
     }
 
     ul {
-        font-size: 1.2rem;
-        width: 100%;
-        line-height: 2;
-        padding-left: 10%;
-        // text-align: center;
-
+        padding-left: 12%;
     }
 
-    img {
-        width:50%;
-        border-radius: 10px;
-    }
 }
 
 .bottom-content {
-    display: flex;
-    padding-top: 5%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 2%;
-    margin-top: 3.2%;
-    margin-bottom: 3.2%;
-    justify-content: space-between;
+
+    .contstyle();
 
     article {
-        flex-wrap: wrap;
         width: 50%;
         text-align: center;
         align-self: center;
+        padding-bottom: 10%;
     
         h1 {
             padding: 5% 0;
@@ -107,11 +76,6 @@
             border:none;
         }
     }
-
-    img {
-        width: 50%;
-        border-radius: 10px;
-    }
 }
 
 
@@ -119,23 +83,93 @@
 
 
 .abtcont {
-    padding-top: 10%;
+    padding-top: 3.2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-
-.card {
-    justify-content: space-between;
-    width: 23%;
-    padding-bottom: 3%;
-    text-align: center;
 
     img {
-        width:100%;
-        height: auto;
-        border-radius: 10px;
-        padding-bottom: 2%;
+        .imgstyle();
+        width: 100%;
     }
 }
 
+.card {
+    width: 23%;
+    padding-bottom: 5%;
+    text-align: center;
+
+    h1 {
+        padding: 5% 0 0 0;
+    }
+
+}
+
+
+//HOMEPAGE MOBILE STYLES
+@media @phone {
+
+    .container {
+            max-width: 96%;
+    }
+
+    .top-content {
+            flex-direction: column-reverse;
+        
+            article {
+                width: 100%;
+                padding: 2%;
+            
+                p {
+                    margin: 4%;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    .middle-content {
+        flex-direction: column;
+    
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+        img {
+            display: none;
+        }
+        ul {
+            padding:0;
+        }
+    }
+
+    .bottom-content {
+        flex-direction: column-reverse;
+
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+}
+
+
+// ABOUTPAGE MOBILE STYLES
+@media @phone {
+    .abtcont {
+        max-width: 96%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

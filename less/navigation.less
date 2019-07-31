@@ -1,9 +1,7 @@
 header {
-    display: flex;
     background-color: #fff;
     width:100%;
-    padding: 1% 20%;
-    position: absolute;
+    padding: 1% 0 0 20%;
     
     nav {
         width: 100%;
@@ -20,21 +18,58 @@ header {
                 }
 
                 img {
-                    width: 15%;
+                    width: 12%;
                     padding-left: 2%;
                 }
             }
 
         a {
-            justify-content: flex-start;
             text-decoration: none;
             color:black;
-            padding: 2% 5% 0 0;
-            font-size: 1.5rem;
-            flex-direction: row;
 
-            i {
-                padding-right: 20%;
+            padding: 1% 2% 1% 0;
+            font-size: 1.5rem;
+        
+            &:hover {
+                background-color: #DAE0E6;
+            }
+        
+        i {
+                font-size: 1.5rem;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+//mobile navigation
+@media @phone {
+    header {
+        width: 100%;
+        padding: 0;
+    
+        nav {
+            justify-content: space-evenly; 
+
+            .logo {
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 2% 0;
+
+                h1 {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                img {
+                    width: 40%;
+                    padding: 0;
+                }
+            }
+            
+
+            a {
+                margin-bottom: 2%;
             }
         }
     }
