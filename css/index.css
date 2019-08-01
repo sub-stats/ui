@@ -515,6 +515,10 @@ header nav .acont a {
     width: 100%;
     padding: 2%;
   }
+  .bottom-content article h1 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
   .bottom-content img {
     width: 100%;
   }
