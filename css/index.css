@@ -140,21 +140,27 @@ body {
   font-size: 1rem;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 p {
-  font-size: 1.5rem;
+  font-size: 0.95rem;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 ul {
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: 0.95rem;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 .container {
   max-width: 60%;
@@ -188,7 +194,7 @@ header .logo {
   flex-flow: row-reverse;
   align-items: center;
   justify-content: space-between;
-  width: 17rem;
+  width: 23.5rem;
   border-radius: 3rem 3rem 0 0;
   background-color: hsla(0, 0%, 100%, 0.9);
   background-image: -webkit-linear-gradient(330deg, rgba(255, 135, 23, 0.6) 70%, rgba(255, 176, 0, 0.6) 0);
@@ -231,12 +237,11 @@ header nav .acont a {
   opacity: 0.8;
   font-size: 0.775rem;
   padding: 0 2% 0 0;
-  width: 15%;
+  min-width: 8%;
 }
 header nav .acont a:hover {
   opacity: 1;
   transition: 0.5s;
-  border-bottom: 1px orange;
 }
 header nav .acont i {
   font-size: 1rem;
