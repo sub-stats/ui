@@ -169,33 +169,46 @@ ul {
 header {
   background-color: #0079d3;
   width: 100%;
-  padding: 1% 0 0 0%;
   box-shadow: 0 0 10px grey;
   background-image: url("/images/headerimg.svg");
   background-size: 50rem;
   background-repeat: no-repeat;
-  background-position: 72%;
+  background-position: center;
   background-position-y: -12rem;
   background-attachment: fixed;
-  height: 10rem;
+  height: 13rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   color: white;
 }
 header .logo {
+  padding: 16px;
   display: flex;
-  width: 100%;
-  padding-left: 20%;
+  flex-flow: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 17rem;
+  border-radius: 3rem 3rem 0 0;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  background-image: -webkit-linear-gradient(330deg, rgba(255, 135, 23, 0.6) 70%, rgba(255, 176, 0, 0.6) 0);
+  background-image: linear-gradient(120deg, rgba(255, 135, 23, 0.6) 70%, rgba(255, 176, 0, 0.6) 0);
+  box-shadow: 0 -2px 5px #5a5a5a;
+  top: 6rem;
+  margin: 0 90% 0 7%;
+  z-index: 2;
+  height: 4rem;
+  color: black;
 }
 header .logo h1 {
-  font-family: 'Pacifico', cursive;
-  align-self: center;
+  font-family: Baloo Chettan;
+  font-weight: 400;
+  font-size: 2.125rem;
   opacity: 0.8;
 }
 header .logo img {
-  width: 12%;
-  padding-left: 2%;
+  width: 5rem;
+  margin-top: 2.75rem;
 }
 header nav {
   width: 100%;
@@ -206,26 +219,29 @@ header nav {
 header nav .acont {
   background-color: #24a0ed;
   width: 100%;
-  padding-left: 20%;
   height: 48px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 header nav .acont a {
+  font-family: verdana, arial, helvetica, sans-serif;
   text-decoration: none;
   color: white;
   opacity: 0.8;
-  font-size: 1.5rem;
+  font-size: 0.775rem;
   padding: 0 2% 0 0;
-  width: 13rem;
+  width: 15%;
 }
 header nav .acont a:hover {
   opacity: 1;
   transition: 0.5s;
+  border-bottom: 1px orange;
 }
 header nav .acont i {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding-right: 20px;
+  vertical-align: baseline;
 }
 @media (max-width: 500px) {
   header {
@@ -245,14 +261,15 @@ header nav .acont i {
     width: 35%;
     padding: 0;
   }
-  header .logo nav {
+  header nav {
+    padding: 0;
+    justify-content: center;
+  }
+  header nav .acont {
+    padding-left: 0;
     justify-content: space-evenly;
   }
-  header .logo nav .acont {
-    padding: 0;
-  }
-  header .logo nav .acont a {
-    margin-bottom: 2%;
+  header nav .acont a {
     padding: 0;
   }
 }
@@ -270,6 +287,7 @@ header nav .acont i {
   border-radius: 10px;
   padding: 2%;
   box-shadow: 2px 3px 3px lightgrey;
+  border: 5px solid linear-gradient(120deg, rgba(255, 135, 23, 0.4) 30%, rgba(255, 176, 0, 0.4) 20%);
 }
 .top-content article {
   display: flex;
@@ -281,6 +299,7 @@ header nav .acont i {
 .top-content h1 {
   width: 100%;
   text-align: center;
+  color: #FF3300;
 }
 .middle-content {
   display: flex;
@@ -289,8 +308,11 @@ header nav .acont i {
   border-radius: 10px;
   padding: 2%;
   box-shadow: 2px 3px 3px lightgrey;
-  padding-top: 5%;
+  border: 5px solid linear-gradient(120deg, rgba(255, 135, 23, 0.4) 30%, rgba(255, 176, 0, 0.4) 20%);
   margin: 3.2% 0;
+}
+.middle-content img {
+  height: auto;
 }
 .middle-content article {
   width: 50%;
@@ -298,11 +320,13 @@ header nav .acont i {
 .middle-content h1 {
   width: 100%;
   text-align: center;
+  color: #FF3300;
   padding-bottom: 5%;
 }
 .middle-content h2 {
   width: 100%;
   text-align: center;
+  color: #FF3300;
   padding-bottom: 5%;
 }
 .middle-content ul {
@@ -315,6 +339,7 @@ header nav .acont i {
   border-radius: 10px;
   padding: 2%;
   box-shadow: 2px 3px 3px lightgrey;
+  border: 5px solid linear-gradient(120deg, rgba(255, 135, 23, 0.4) 30%, rgba(255, 176, 0, 0.4) 20%);
 }
 .bottom-content article {
   width: 50%;
@@ -360,9 +385,11 @@ header nav .acont i {
 @media (max-width: 500px) {
   .container {
     max-width: 96%;
+    display: flex;
   }
   .top-content {
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .top-content article {
     width: 100%;
