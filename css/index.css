@@ -276,43 +276,45 @@ header nav .acont i {
   }
   header nav .acont {
     padding-left: 6%;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   header nav .acont a {
     padding: 0;
   }
 }
-header {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-header .logo {
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2% 0;
-  margin: 0 auto;
-}
-header .logo h1 {
-  width: 100%;
-  text-align: center;
-}
-header .logo img {
-  width: 14%;
-  padding: 0;
-  margin: 0;
-  margin-top: -0.25;
-}
-header nav {
-  padding: 0;
-  justify-content: center;
-}
-header nav .acont {
-  padding-left: 6%;
-  justify-content: space-evenly;
-}
-header nav .acont a {
-  padding: 0;
+@media (max-width: 800px) {
+  header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header .logo {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2% 0;
+    margin: 0 auto;
+  }
+  header .logo h1 {
+    width: 100%;
+    text-align: center;
+  }
+  header .logo img {
+    width: 14%;
+    padding: 0;
+    margin: 0;
+    margin-top: -0.25;
+  }
+  header nav {
+    padding: 0;
+    justify-content: center;
+  }
+  header nav .acont {
+    padding-left: 6%;
+    justify-content: space-evenly;
+  }
+  header nav .acont a {
+    padding: 0;
+  }
 }
 .main {
   margin: 3.2% 0;
@@ -423,6 +425,12 @@ header nav .acont a {
 .card a {
   font-size: 3rem;
   color: black;
+  padding-bottom: 5%;
+}
+.card h1 h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 5% 0;
 }
 @media (max-width: 500px) {
   .container {
