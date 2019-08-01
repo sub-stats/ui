@@ -235,7 +235,7 @@ header nav .acont a {
   text-decoration: none;
   color: white;
   opacity: 0.8;
-  font-size: 0.775rem;
+  font-size: 0.75rem;
   padding: 0 2% 0 0;
   min-width: 8%;
 }
@@ -281,6 +281,38 @@ header nav .acont i {
   header nav .acont a {
     padding: 0;
   }
+}
+header {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+header .logo {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2% 0;
+  margin: 0 auto;
+}
+header .logo h1 {
+  width: 100%;
+  text-align: center;
+}
+header .logo img {
+  width: 14%;
+  padding: 0;
+  margin: 0;
+  margin-top: -0.25;
+}
+header nav {
+  padding: 0;
+  justify-content: center;
+}
+header nav .acont {
+  padding-left: 6%;
+  justify-content: space-evenly;
+}
+header nav .acont a {
+  padding: 0;
 }
 .main {
   margin: 3.2% 0;
@@ -390,6 +422,7 @@ header nav .acont i {
 }
 .card a {
   font-size: 3rem;
+  color: black;
 }
 @media (max-width: 500px) {
   .container {
@@ -441,5 +474,57 @@ header nav .acont i {
   }
   .card {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 96%;
+    display: flex;
+  }
+  .top-content {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .top-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .top-content article p {
+    margin: 4%;
+  }
+  .top-content img {
+    width: 100%;
+  }
+  .middle-content {
+    flex-direction: column;
+  }
+  .middle-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .middle-content img {
+    display: none;
+  }
+  .middle-content ul {
+    padding: 0;
+  }
+  .bottom-content {
+    flex-direction: column-reverse;
+  }
+  .bottom-content article {
+    width: 100%;
+    padding: 2%;
+  }
+  .bottom-content img {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .abtcont {
+    max-width: 96%;
+    flex-direction: row;
+  }
+  .card {
+    width: 48%;
   }
 }

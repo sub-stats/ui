@@ -110,6 +110,7 @@
     text-align: center;
     a {
         font-size: 3rem;
+        color: black;
     }
 }
 
@@ -183,5 +184,73 @@
 
     .card {
         width: 100%;
+    }
+}
+
+//tablet view Homepage styles
+@media @tablet {
+        .container {
+            max-width: 96%;
+            display: flex;
+        }
+        
+        .top-content {
+            flex-direction: column-reverse;
+            justify-content: center;
+        
+        
+            article {
+                width: 100%;
+                padding: 2%;
+            
+                p {
+                    margin: 4%;
+                }
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+
+    .middle-content {
+        flex-direction: column;
+
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+        img {
+            display: none;
+        }
+        ul {
+            padding:0;
+        }
+    }
+
+    .bottom-content {
+        flex-direction: column-reverse;
+
+        article {
+            width: 100%;
+            padding: 2%;
+        }
+
+        img {
+            width: 100%;
+        }
+        
+    }
+}
+//tablet view aboutpages
+@media @tablet {
+    .abtcont {
+        max-width: 96%;
+        flex-direction: row;
+    }
+
+    .card {
+         width: 48%;
     }
 }
