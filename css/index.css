@@ -390,7 +390,12 @@ header nav .acont i {
   padding: 2% 2% 0 0;
 }
 .bottom-content article h1 {
-  padding: 10% 0 5% 0;
+  padding: 3% 0 5% 0;
+  color: #24A0ED;
+}
+.bottom-content article h2 {
+  font-size: 1.2rem;
+  color: #24A0ED;
 }
 .bottom-content article button {
   margin: 5% 0 0 0;
